@@ -68,7 +68,32 @@ public class LinkedList<T> {
         
     }
     public T deletAtEnd(){
-        return null;
+        if (Start==null){
+            System.out.println("List is Empty");
+            return null;
+        }
+        else if (Start.next==null) {
+          T data = Start.data;
+          Start=  null;
+
+          return data;
+        }
+
+        
+        else{
+            Node _t = Start ;
+            Node _t2= null ;
+            while(_t.next!=null){
+               _t2 = _t; 
+              _t=_t.next;
+            }
+            T data = _t.data;
+            _t2.next= null;
+            return data;
+              
+
+        }
+
     }
     public T deletNode(){
         return null;
@@ -106,9 +131,8 @@ public class LinkedList<T> {
         list.insertAfter(102, 3);
         list.print();
         list.insertAfter(6, 7);
-        list.deletAtStart();
-        list.deletAtStart();
         list.print();
-
+        list.deletAtEnd();
+        list.print();
     }
 }
