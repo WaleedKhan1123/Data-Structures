@@ -25,11 +25,18 @@ public class LinkedList<T> {
           Node n = new Node();
           n.data = Value;
           if(Start==null){
-
+             Start=n;
+          }
+          else{
+            Node _t = Start;
+            while(_t.next!=null){
+              _t=_t.next;
+            }
+            _t.next = n;
           }
     }
     public void insertAfter(){
-
+        
     }
     public T deletAtStart(){
         return null;
@@ -67,6 +74,9 @@ public class LinkedList<T> {
         list.insetAtStart(10);
         list.print();
         list.insetAtStart(2);
+        list.print();
+        list.insertAtEnd(6);
+        list.insertAtEnd(102);
         list.print();
     }
 }
