@@ -21,8 +21,12 @@ public class LinkedList<T> {
      }
     }
 
-    public void insertAtEnd(){
-          
+    public void insertAtEnd(T Value){
+          Node n = new Node();
+          n.data = Value;
+          if(Start==null){
+
+          }
     }
     public void insertAfter(){
 
