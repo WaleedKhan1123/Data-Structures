@@ -58,7 +58,7 @@ public class LinkedList<T> {
      }
     }
     public static void main(String[] args) {
-        LinkedList<Integer> list = new LinkedList();
+        LinkedList<Integer> list = new LinkedList<>();
         list.print(); 
         list.insetAtStart(10);
         list.print();
