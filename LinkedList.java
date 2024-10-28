@@ -108,18 +108,23 @@ public class LinkedList<T> {
                 if(_t1 == key){
                      if (Start.data==key) {
                          Start = Start.next;   
-                     }
+                         return key;                    
+                        }
                      else{
-                       
-
+                       _t2.next = _t1.next;
+                       _t1.next = null;
+                       return key;
                      }
                     
                 }
                 _t2 = _t1;
                 _t1 = _t1.next;
              }
+             
         }
-        return key;
+        System.out.println("Key not Found");
+        return null;
+        
     }
 
 
