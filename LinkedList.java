@@ -126,17 +126,16 @@ public class LinkedList<T> {
     }
 
     public boolean searchNode(T key) {
-   
-        if (Start == null){
+
+        if (Start == null) {
             System.out.println("List is Empty");
             return false;
-        }
-        else{
+        } else {
 
-            Node temp =Start;
-            while(temp!=null){
+            Node temp = Start;
+            while (temp != null) {
 
-                if (temp.data == key){
+                if (temp.data == key) {
                     return true;
                 }
 
@@ -144,9 +143,8 @@ public class LinkedList<T> {
             }
             System.out.println("Key not found");
             return false;
-             }
-        
-    
+        }
+
     }
 
     public void print() {
