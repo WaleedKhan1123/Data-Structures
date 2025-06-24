@@ -30,7 +30,7 @@ public class LinkedList<T>
         {
             Start =End= n;     // start and end refers to n node
             
-        } else if (Start == End) //when there is one node in the list
+        } else if (Start == End//when there is one node in the list
         {
             n.next = Start;      // next of n node refers to start
             Start.previous = n;  // previous of start node refers to n node
